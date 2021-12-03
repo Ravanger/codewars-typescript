@@ -1,0 +1,22 @@
+{
+  "name": "codecamp",
+  "version": "1.0.0",
+  "description": "Code Camp stuff",
+  "main": "index.js",
+  "author": "Boris Rossovsky",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "@types/chai": "^4.2.22",
+    "@types/expect": "^24.3.0",
+    "@types/mocha": "^9.0.0",
+    "chai": "^4.3.4",
+    "mocha": "^9.1.3",
+    "ts-mocha": "^8.0.0",
+    "typescript": "^4.5.2"
+  },
+  "scripts": {
+    "test": "ts-mocha -p ./tsconfig.json ./test/*"
+  }
+}
