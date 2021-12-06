@@ -1,17 +1,14 @@
+// See https://www.chaijs.com for how to use Chai.
 import { assert } from "chai"
-import { orderWeight } from "../src/Weight for weight"
+import { pigIt } from "../src/Simple Pig Latin"
 
-describe("Fixed Tests", function () {
-  it("orderWeight", function () {
+describe("Tests", () => {
+  it("test", () => {
+    assert.strictEqual(pigIt("Pig latin is cool"), "igPay atinlay siay oolcay")
+    assert.strictEqual(pigIt("This is my string"), "hisTay siay ymay tringsay")
     assert.strictEqual(
-      orderWeight("103 123 4444 99 2000"),
-      "2000 103 123 4444 99"
-    )
-  })
-  it("orderWeight", function () {
-    assert.strictEqual(
-      orderWeight("2000 10003 1234000 44444444 9999 11 11 22 123"),
-      "11 11 2000 10003 22 123 1234000 44444444 9999"
+      pigIt(" O tempora o mores !"),
+      " Oay emporatay oay oresmay !"
     )
   })
 })
