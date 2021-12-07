@@ -1,9 +1,8 @@
 import { assert } from "chai"
-import { digitalRoot } from "../src/Sum of Digits - Digital Root"
+import { spinWords } from "../src/Stop gninnipS My sdroW!"
 
-describe("solution", () => {
-  it("should work for fixed tests", () => {
-    assert.equal(digitalRoot(16), 7)
-    assert.equal(digitalRoot(456), 6)
+describe("spinWords", () => {
+  it("should pass some fixed tests", () => {
+    assert.strictEqual(spinWords("Hey fellow warriors"), "Hey wollef sroirraw")
   })
 })
