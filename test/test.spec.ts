@@ -1,8 +1,9 @@
 import { assert } from "chai"
-import { spinWords } from "../src/Stop gninnipS My sdroW!"
+import { Kata } from "../src/Square Every Digit"
 
-describe("spinWords", () => {
-  it("should pass some fixed tests", () => {
-    assert.strictEqual(spinWords("Hey fellow warriors"), "Hey wollef sroirraw")
+describe("squareDigits", function () {
+  it("should pass a sample test", function () {
+    assert.strictEqual(Kata.squareDigits(9119), 811181)
+    assert.strictEqual(Kata.squareDigits(0), 0)
   })
 })
