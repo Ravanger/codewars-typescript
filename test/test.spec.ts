@@ -1,11 +1,9 @@
 import { assert } from "chai"
-import { even_or_odd } from "../src/Even or Odd"
+import { digitalRoot } from "../src/Sum of Digits - Digital Root"
 
-describe("solution", function () {
-  it("basicTests", function () {
-    assert.equal(even_or_odd(2), "Even")
-    assert.equal(even_or_odd(0), "Even")
-    assert.equal(even_or_odd(7), "Odd")
-    assert.equal(even_or_odd(1), "Odd")
+describe("solution", () => {
+  it("should work for fixed tests", () => {
+    assert.equal(digitalRoot(16), 7)
+    assert.equal(digitalRoot(456), 6)
   })
 })
