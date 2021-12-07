@@ -1,9 +1,11 @@
 import { assert } from "chai"
-import { Kata } from "../src/Square Every Digit"
+import { Kata } from "../src/Disemvowel Trolls"
 
-describe("squareDigits", function () {
+describe("disemvowel", function () {
   it("should pass a sample test", function () {
-    assert.strictEqual(Kata.squareDigits(9119), 811181)
-    assert.strictEqual(Kata.squareDigits(0), 0)
+    assert.strictEqual(
+      Kata.disemvowel("This website is for losers LOL!"),
+      "Ths wbst s fr lsrs LL!"
+    )
   })
 })
