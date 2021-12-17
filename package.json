@@ -17,6 +17,7 @@
     "typescript": "^4.5.2"
   },
   "scripts": {
-    "test": "ts-mocha -p ./tsconfig.json ./test/*"
+    "test": "ts-mocha -p ./tsconfig.json ./test/test.spec.ts",
+    "testall": "ts-mocha -p ./tsconfig.json ./test/*"
   }
 }
